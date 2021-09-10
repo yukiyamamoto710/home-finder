@@ -3,6 +3,7 @@
 ## About The Application
 
 It is a simple home address search web app that returns matching houses from a large set of houses.
+![Usage](https://media.giphy.com/media/xRaL7HXRkLhu18b5ek/giphy.gif?cid=790b761188b060ab9cda5dcb66091e81fbc84b0596653fb7&rid=giphy.gif&ct=g)
 
 ### Built With
 
@@ -49,5 +50,5 @@ It is a simple home address search web app that returns matching houses from a l
 ## Acknowledgements
 
 * [Redfin](https://www.redfin.com/)
-* [CSVTOJSON](hhttps://www.npmjs.com/package/csvtojson)
+* [CSVTOJSON](https://www.npmjs.com/package/csvtojson)
 * [Font Awesome](https://fontawesome.com)
