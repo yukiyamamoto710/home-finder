@@ -1,7 +1,7 @@
 {
   "name": "home-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "It is a simple home address search that returns matching houses from a large set of houses",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",

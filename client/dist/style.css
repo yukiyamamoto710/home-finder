@@ -29,10 +29,6 @@ h4 {
   justify-content: center;
 }
 
-.no-result {
-  font-size: 1.1em;
-}
-
 .title {
   font-size: 48px;
   font-weight: 100;
@@ -40,19 +36,36 @@ h4 {
   color: white;
 }
 
-.search-bar {
-  width: 100%;
-  top: 150px;
+.search {
+  height: 30px;
+  width: 450px;
+}
+
+.search-button {
+  position: relative;
+  left: -30px;
+  border: none;
+  background-color: white;
+}
+
+.fa-search {
+  position: relative;
+  left: 0;
+  z-index:999;
+}
+
+.fa-search:hover {
+  color: rgb(46, 63, 139, 0.5);
+  cursor: pointer;
+}
+
+.no-result {
+  font-size: 1.1em;
 }
 
 .search-result {
   width: 70%;
   margin: auto;
-}
-
-.search {
-  height: 30px;
-  width: 450px;
 }
 
 .container {
@@ -82,6 +95,10 @@ h4 {
   cursor: pointer;
 }
 
+.home-url {
+  text-decoration: none;
+}
+
 .home-entry {
   text-align: left;
   border: 1px solid rgb(46, 63, 139);
@@ -96,10 +113,6 @@ h4 {
 .home-entry:hover {
   box-shadow: 0px 0px 10px 1px grey;
   cursor: pointer;
-}
-
-.home-url {
-  text-decoration: none;
 }
 
 .property-type {
@@ -119,24 +132,6 @@ h4 {
 .home-address {
   font-size: 0.8em;
   margin-top: 5px;
-}
-
-.search-button {
-  position: relative;
-  left: -30px;
-  border: none;
-  background-color: white;
-}
-
-.fa-search {
-  position: relative;
-  left: 0;
-  z-index:999;
-}
-
-.fa-search:hover {
-  color: rgb(46, 63, 139, 0.5);
-  cursor: pointer;
 }
 
 .fa-home {
