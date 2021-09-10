@@ -59,6 +59,33 @@ h4 {
   cursor: pointer;
 }
 
+.suggestion-container {
+  position: absolute;
+  width: 458px;
+  background-color: white;
+}
+
+ul {
+  padding: 5px 0 0 5px;
+  margin: 0
+}
+
+.suggestion {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  text-align: left;
+  border-bottom: 1px solid;
+  list-style-type: none;
+}
+
+.suggestion:hover {
+  font-weight: 400;
+  cursor: pointer;
+}
+
 .no-result {
   font-size: 1.1em;
 }

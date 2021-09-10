@@ -10,8 +10,10 @@ class App extends React.Component {
     super(props);
     this.state = {
       exact: [],
-      nearby: []
+      nearby: [],
+      suggestions: []
     }
+    this.getSuggestions = this.getSuggestions.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
   }
 
@@ -23,6 +25,19 @@ class App extends React.Component {
         nearby: homes.nearby || []
       })
     }
+  }
+
+  getSuggestions(data) {
+    axios.get('/homes', {params: { address: data}})
+    .then((res) => {
+      const suggestions = [...res.data.exact, ...res.data.nearby].map((home) => home.address);
+      this.setState({
+        suggestions: suggestions
+      })
+    })
+    .catch((err) => {
+      console.log(err);
+    })
   }
 
   handleSearch(data) {
@@ -44,7 +59,10 @@ class App extends React.Component {
       <div>
         <div className="header">
           <h1 className="title">Home Finder</h1>
-          <Search handleSearch={this.handleSearch}/>
+          <Search
+            suggestions={this.state.suggestions}
+            handleSearch={this.handleSearch}
+            getSuggestions={this.getSuggestions}/>
         </div>
         <div className="search-result">
             <ExactHomeList list={this.state.exact}/>
