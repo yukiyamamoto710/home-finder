@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
+import debounce from 'lodash.debounce';
 
 const Search = (props) => {
 
@@ -7,9 +8,13 @@ const Search = (props) => {
 
   const showSuggestions = (e) => {
     setAddress(e.target.value);
-    props.getSuggestions(e.target.value);
+    debouncedSave(e.target.value)
     setLoading(true);
   }
+
+  const debouncedSave = useCallback(
+    debounce((newValue) => props.getSuggestions(newValue), 300), []
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
