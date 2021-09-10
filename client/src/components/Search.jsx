@@ -18,6 +18,7 @@ const Search = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(false);
     props.handleSearch(address);
   }
 
@@ -25,6 +26,7 @@ const Search = (props) => {
     <form onSubmit={handleSubmit}>
       <div>
       <input className="search"
+        autocomplete="off"
         name="address"
         value={address}
         placeholder="Address, City, State, Zip Code"
@@ -33,7 +35,7 @@ const Search = (props) => {
           <i className="fas fa-search"></i>
         </button>
       </div>
-      {loading && <div className="suggestion-container">
+      {loading && address.length && <div className="suggestion-container">
         <ul>
           {props.suggestions.slice(0,3).map((suggestion) => {
             return (

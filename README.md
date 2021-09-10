@@ -1,5 +1,15 @@
 # Home Finder
 
+## About The Application
+
+It is a simple home address search web app that returns matching houses from a large set of houses.
+
+### Built With
+
+* [React](https://reactjs.org/)
+* [Express](http://expressjs.com/)
+* [MySQL](https://www.mysql.com/)
+
 ## Getting Started
 
 1. Fork and clone this repo, then open two terminal tabs and navigate to the root directory.
@@ -35,3 +45,9 @@
   ```
 
 7. Open your brower and type ```localhost:3001```
+
+## Acknowledgements
+
+* [Redfin](https://www.redfin.com/)
+* [CSVTOJSON](hhttps://www.npmjs.com/package/csvtojson)
+* [Font Awesome](https://fontawesome.com)
