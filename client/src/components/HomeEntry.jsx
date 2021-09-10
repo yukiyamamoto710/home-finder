@@ -1,11 +1,11 @@
 import React from 'react';
 
 const HomeEntry = ({home}) => {
-  const {url, price, beds, baths, square_feet, name, address, city, state, zip} = home;
+  const {url, price, beds, baths, square_feet, property_types, address, city, state, zip} = home;
   return (
     <a href={url} className="home-url">
       <div className="home-entry">
-        <div className="property-type">{name}</div>
+        <div className="property-type">{property_types}</div>
         <i className="fas fa-home"></i>
         <div className="text">
           <div className="home-price">${price.toLocaleString()}</div>

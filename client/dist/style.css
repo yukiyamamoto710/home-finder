@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(46, 63, 139);
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 300;
+  margin-top: 50px;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.header {
+  background-image: url("pexels-binyamin-mellish-186077.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-result {
+  font-size: 1.1em;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 100;
+  margin-right: 50px;
+  color: white;
+}
+
+.search-bar {
+  width: 100%;
+  top: 150px;
+}
+
+.search-result {
+  width: 70%;
+  margin: auto;
+}
+
+.search {
+  height: 30px;
+  width: 450px;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  max-width: 100%;
+}
+
+.slideLeft,
+.slideRight {
+  margin: 25px;
+  width: 20px;
+  border: none;
+  width: 30px;
+}
+
+.slideLeft:hover,
+.slideRight:hover {
+  background-color: rgb(46, 63, 139, 0.5);
+  cursor: pointer;
+}
+
+.home-entry {
+  text-align: left;
+  border: 1px solid rgb(46, 63, 139);
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+  padding: 5% 0 0 5%;
+  margin: 20px;
+  color: black;
+}
+
+.home-entry:hover {
+  box-shadow: 0px 0px 10px 1px grey;
+  cursor: pointer;
+}
+
+.home-url {
+  text-decoration: none;
+}
+
+.property-type {
+  font-size: 0.8em;
+}
+
+.home-price {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.home-details {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.home-address {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.search-button {
+  position: relative;
+  left: -30px;
+  border: none;
+  background-color: white;
+}
+
+.fa-search {
+  position: relative;
+  left: 0;
+  z-index:999;
+}
+
+.fa-search:hover {
+  color: rgb(46, 63, 139, 0.5);
+  cursor: pointer;
+}
+
+.fa-home {
+  font-size: 150px;
+  margin: 5%;
+}
